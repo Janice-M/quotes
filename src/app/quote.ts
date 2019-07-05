@@ -1,4 +1,8 @@
 export class Quote {
-        lyrics: string;
-        name: string;
+
+constructor(public No:number, public lyrics:string, public name:string ){
+
+}
+
+
 }

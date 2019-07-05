@@ -1,10 +1,10 @@
 
-    <form>
+    <form #quoteForm='ngForm'>
        
         <div class="form-group">
   
             <label for="lyrics"><b>Lyrics:</b></label>
-            <textarea class="form-control" id="description" placeholder="Your favourite lyrical quote" rows="4" required></textarea>
+            <textarea class="form-control" id="description"  [(ngModel)]="newQuote.lyrics" name="lyrics"  placeholder="Your favourite lyrical quote" rows="4" required></textarea>
   
         </div>
         <div class="form-group">
