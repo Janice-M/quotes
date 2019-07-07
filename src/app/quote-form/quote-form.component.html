@@ -4,15 +4,15 @@
         <div class="form-group">
   
             <label for="lyrics"><b>Lyrics:</b></label>
-            <textarea class="form-control" id="lyrics"  [(ngModel)]="newQuote.lyrics" name="lyrics"  placeholder="Your favourite lyrical quote" rows="4" required></textarea>
+            <textarea class="form-control" id="lyrics" #lyrics [(ngModel)]="quote.lyrics" name="lyrics"  placeholder="Your favourite lyrical quote" rows="4" required></textarea>
   
         <div class="form-group">
   
                 <label for="name"><b>Author name:</b></label>
-                <input type="text" placeholder="Author name" required class="form-control" id="name">
+                <input [(ngModel)]="quote.name" #name type="text" placeholder="Author name" required class="form-control" id="name">
       
             </div>
         </div>
 
-            <button class="btn btn-info text-center" value = "submit" type="submit">Submit lyrical quote</button>
+            <button class="btn btn-info text-center" #submit value = "submit" type="submit">Submit lyrical quote</button>
     </form>
