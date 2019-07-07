@@ -1,6 +1,6 @@
 export class Quote {
 
-constructor(public No:number, public lyrics:string, public name:string ){
+constructor(public number:number, public lyrics:string, public name:string, public completeDate: Date){
 
 }
 

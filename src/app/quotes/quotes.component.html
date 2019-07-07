@@ -3,17 +3,19 @@
       <h2 class="text-center">LYRICAL QUOTES</h2>
     
       <p class="text-center">Let us bear witness to some of the greatest lyrics you have ever heard! </p>
-      <div> <app-quote-form></app-quote-form></div>
+      <div> <app-quote-form (addGoal)="addNewQuote($event)"></app-quote-form></div>
   <br>
   
     <div class="row">
-      <div class="col-6">
+      <div class="col-6" >
+    
               <h3>Last Added lyrical Quote</h3>
-              <ul>
-                <li *ngFor='let quote of quotes'>
-                  {{quote.lyrics}}
+              <ul *ngFor='let quote of quotes; let i = index'>
+                <li {{quote.lyrics}} >
+                
                 </li>
             </ul>
+           
           </div>
      
       <div class="col-6 text-right">
